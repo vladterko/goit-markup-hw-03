@@ -16,6 +16,10 @@
     --main-bg-clr: #fff;
     --sec-bg-clr: #F5F4FA;
     --dark-bg-clr: #2F303A;
+
+    /* grid */
+    --indent: 30px;
+    --items: 3;
 }
 
 /** =====  Reset styles  =====  
@@ -98,9 +102,12 @@ img {
 }
 
 .section-title {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .visually-hidden {
@@ -117,11 +124,24 @@ img {
     overflow: hidden;
 }
 
+/* Dynamic grid */
+.grid-set {
+    outline: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.grid-item {
+    outline: 1px solid blue;
+    /* flex-basis: calc((100% - margin * 3) / items); */
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 /** =====  Header section  =====  
 ======================================== */
 .header-container {
     display: flex;
-    height: 80px;
     align-items: center;
 
     border-bottom: 1px solid #ECECEC;
@@ -201,11 +221,10 @@ img {
 
 .main-btn {
     display: block;
-    min-width: 200px;
+    width: 200px;
     height: 50px;
     margin-right: auto;
     margin-left: auto;
-    padding: 10px 32px;
 
     font-weight: 700;
     line-height: 1.88;
@@ -223,12 +242,17 @@ img {
 
 /** =====  Features section  =====  
 ======================================== */
+.features-section {
+    padding-bottom: 0;
+}
+
 .features-list {
     display: flex;
+    flex-basis: 1170px;
 }
 
 .features-item {
-    width: 270px;
+    flex-basis: 270px;
 }
 
 .features-item:not(:last-child) {
@@ -252,6 +276,11 @@ img {
     letter-spacing: 0.03em;
     color: var(--secondary-txt-clr);
 }
+/** =====  Work section  =====  
+======================================== */
+.work-list {
+    flex-basis: 1170px;
+}
 
 /** =====  Team section  =====  
 ======================================== */
@@ -259,7 +288,26 @@ img {
     background-color: var(--sec-bg-clr);
 }
 
+.team-list {
+    flex-basis: 1170px;
+
+    --items: 4;
+}
+
+.team-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        text-align: center;
+
+        borde
+}
+
 .team-title {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
