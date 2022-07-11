@@ -56,6 +56,10 @@ body {
     background-color: var(--main-bg-clr);
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1200px;
     margin-right: auto;
@@ -63,6 +67,11 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     outline: 1px solid red;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .current-page {
@@ -177,20 +186,35 @@ body {
 }
 
 .main-title {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-clr);
+    text-align: center;
 }
 
 .main-btn {
+    display: block;
+    min-width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 32px;
+
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--light-txt-clr);
     background-color: var(--accent-clr);
+
+    border-radius: 4px;
 }
 
 .main-btn:hover,
