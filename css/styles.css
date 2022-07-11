@@ -1,0 +1,221 @@
+:root {
+    /* fonts */
+    --main-font: 'Roboto', sans-serif;
+    --socondary-font: 'Raleway', sans-serif;
+
+    /* text colors */
+    --main-txt-clr: #212121;
+    --secondary-txt-clr: #757575;
+    --accent-clr: #2196F3;
+    --sec-acc-clr: #188CE8;
+    --light-txt-clr: #fff;
+    --dark-txt-clr: #000;
+    --trans-txt-clr: rgba(255, 255, 255, 0.6);
+
+    /* bg colors */
+    --main-bg-clr: #fff;
+    --sec-bg-clr: #F5F4FA;
+    --dark-bg-clr: #2F303A;
+}
+
+/** =====  Reset styles  =====  
+======================================== */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/** =====  Common styles  =====  
+======================================== */
+body {
+    font-family: var(--main-font);
+    color: var(--main-txt-clr);
+    background-color: var(--main-bg-clr);
+}
+
+.current-page {
+    color: var(--accent-clr);
+}
+
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    cursor: pointer;
+    border: none;
+}
+
+.logo-link {
+    font-family: var(--socondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-clr);
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+/** =====  Header section  =====  
+======================================== */
+.logo-link .logo-dark {
+    color: var(--dark-txt-clr);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-clr);
+}
+
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-clr);
+}
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-clr);
+}
+
+/** =====  Hero section  =====  
+======================================== */
+.hero-section {
+    background-color: var(--dark-bg-clr);
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-txt-clr);
+}
+
+.main-btn {
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--light-txt-clr);
+    background-color: var(--accent-clr);
+}
+
+.main-btn:hover,
+.main-btn:focus {
+    background-color: var(--sec-acc-clr);
+}
+
+/** =====  Features section  =====  
+======================================== */
+.features-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-desc {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-clr);
+}
+
+/** =====  Team section  =====  
+======================================== */
+.team-section {
+    background-color: var(--sec-bg-clr);
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team-desc {
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-clr);
+}
+
+/** =====  Footer section  =====  
+======================================== */
+.footer-section {
+    background-color: var(--dark-bg-clr);
+}
+
+.logo-link .logo-light {
+    color: var(--light-txt-clr);
+}
+
+.footer-addr {
+    font-style: normal;
+}
+
+.addr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--light-txt-clr);
+}
+
+.addr-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--trans-txt-clr);
+}
+
+.addr-link:hover,
+.addr-link:focus {
+    color: var(--light-txt-clr);
+}
+
+/** =====  Portfolio page  =====  
+======================================== */
+/** =====  Portfolio section  =====  
+======================================== */
+.radio-btn {
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--sec-bg-clr);
+}
+
+.radio-btn:hover,
+.radio-btn:focus {
+    color: var(--light-txt-clr);
+    background-color: var(--accent-clr);
+}
+
+.project-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-desc {
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-clr);
+}
