@@ -78,7 +78,8 @@ body {
     border: none;
 }
 
-.logo-link {
+.header-logo,
+.footer-logo {
     font-family: var(--socondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -109,33 +110,65 @@ body {
 
 /** =====  Header section  =====  
 ======================================== */
-.logo-link .logo-dark {
+.header-container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.logo-dark {
     color: var(--dark-txt-clr);
 }
 
-.nav-link {
+.header-nav {
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link,
+.contact-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--accent-clr);
 }
 
 .contact-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     color: var(--secondary-txt-clr);
 }
+
+.nav-link:hover,
+.nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
     color: var(--accent-clr);
 }
+
+.contact-list {
+    display: flex;
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 
 /** =====  Hero section  =====  
 ======================================== */
@@ -203,10 +236,18 @@ body {
 /** =====  Footer section  =====  
 ======================================== */
 .footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--dark-bg-clr);
 }
 
-.logo-link .logo-light {
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo-light {
     color: var(--light-txt-clr);
 }
 
@@ -214,11 +255,18 @@ body {
     font-style: normal;
 }
 
-.addr {
+.post-addr {
+    display: block;
+    margin-bottom: 9px;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--light-txt-clr);
+}
+
+.addr-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .addr-link {
