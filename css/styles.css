@@ -56,6 +56,15 @@ body {
     background-color: var(--main-bg-clr);
 }
 
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    outline: 1px solid red;
+}
+
 .current-page {
     color: var(--accent-clr);
 }
@@ -82,6 +91,20 @@ body {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /** =====  Header section  =====  
