@@ -60,17 +60,12 @@ body {
     background-color: var(--main-bg-clr);
 }
 
-img {
-    display: block;
-}
-
 .container {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-    outline: 1px solid red;
 }
 
 .section {
@@ -126,15 +121,12 @@ img {
 
 /* Dynamic grid */
 .grid-set {
-    outline: 1px solid green;
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
 }
 
 .grid-item {
-    outline: 1px solid blue;
-    /* flex-basis: calc((100% - margin * 3) / items); */
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
@@ -221,10 +213,9 @@ img {
 
 .main-btn {
     display: block;
-    width: 200px;
-    height: 50px;
     margin-right: auto;
     margin-left: auto;
+    padding: 10px 32px;
 
     font-weight: 700;
     line-height: 1.88;
@@ -248,7 +239,6 @@ img {
 
 .features-list {
     display: flex;
-    flex-basis: 1170px;
 }
 
 .features-item {
@@ -276,10 +266,11 @@ img {
     letter-spacing: 0.03em;
     color: var(--secondary-txt-clr);
 }
+
 /** =====  Work section  =====  
 ======================================== */
-.work-list {
-    flex-basis: 1170px;
+.work-item {
+    flex-basis: 370px;
 }
 
 /** =====  Team section  =====  
@@ -289,9 +280,11 @@ img {
 }
 
 .team-list {
-    flex-basis: 1170px;
-
     --items: 4;
+}
+
+.team-item {
+    flex-basis: 270px;
 }
 
 .team-wrapper {
@@ -301,8 +294,6 @@ img {
         padding-right: 5px;
 
         text-align: center;
-
-        borde
 }
 
 .team-title {
@@ -372,11 +363,25 @@ img {
 ======================================== */
 /** =====  Portfolio section  =====  
 ======================================== */
+.radio-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.radio-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .radio-btn {
+    padding: 6px 22px;
+
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
     background-color: var(--sec-bg-clr);
+
+    border-radius: 4px;
 }
 
 .radio-btn:hover,
@@ -385,7 +390,21 @@ img {
     background-color: var(--accent-clr);
 }
 
+.project-item {
+    flex-basis: 370px;
+}
+
+.project-wrapper {
+    padding: 20px 24px;
+
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
 .project-title {
+    margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
