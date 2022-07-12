@@ -194,6 +194,8 @@ body {
 ======================================== */
 .hero-section {
     background-color: var(--dark-bg-clr);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-title {
@@ -208,7 +210,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-clr);
-    text-align: center;
 }
 
 .main-btn {
